@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="content">
+    <img src="https://image.freepik.com/free-photo/milky-way_1401-347.jpg" />
+    <div id="container" style="padding: 24px"></div>
+    <script>
+      var mountNode = document.getElementById('container');
+    </script>
+
+    <form action="#" onsubmit="myFunction()" id="uniqueID">
+      Username:<br>
+      <input type="text" name="firstname">
+      <br>
+      Password:<br>
+      <input type="text" name="lastname">
+      <br><br>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("uniqueID").elements.item(0).value;
+      var y = document.getElementById("uniqueID").elements.item(1).value;
+      let text = `USERNAME |${x}   PASSWORD |${y}`
+      // document.getElementById("demo").innerHTML = text;
+      alert(text);
+    }
+  </script>
+</body>
+
+</html>
